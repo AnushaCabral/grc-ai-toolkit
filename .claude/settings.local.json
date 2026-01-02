@@ -33,7 +33,9 @@
       "Bash(powershell -Command \"Copy-Item ''C:\\\\Users\\\\kabra\\\\oceg_grc\\\\.private\\\\scripts\\\\*'' ''C:\\\\Users\\\\kabra\\\\.project-tracker-template\\\\.private\\\\scripts\\\\'' -Recurse -Force\")",
       "Bash(powershell -Command:*)",
       "Bash(git init:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(git remote:*)",
+      "Bash(git fetch:*)"
     ]
   }
 }

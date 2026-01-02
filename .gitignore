@@ -2,9 +2,6 @@
 .private/
 project-config.json
 
-# GRC AI Toolkit (separate git repository)
-grc_ai_toolkit/
-
 # Python
 __pycache__/
 *.py[cod]

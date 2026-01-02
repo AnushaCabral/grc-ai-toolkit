@@ -1,0 +1,56 @@
+# Core Dependencies
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.0.20
+langchain-openai>=0.0.5
+langchain-anthropic>=0.1.0
+
+# LLM & Embeddings
+openai>=1.12.0
+anthropic>=0.18.0
+tiktoken>=0.6.0
+
+# Vector Stores
+faiss-cpu>=1.7.4
+chromadb>=0.4.22
+
+# Embeddings
+sentence-transformers>=2.3.1
+
+# Document Processing
+pypdf2>=3.0.1
+python-docx>=1.1.0
+pdfplumber>=0.10.3
+unstructured>=0.12.0
+
+# Export Formats
+reportlab>=4.0.9
+markdown>=3.5.2
+
+# Web & API
+streamlit>=1.31.0
+fastapi>=0.109.2
+uvicorn>=0.27.1
+pydantic>=2.6.1
+
+# Data Processing
+pandas>=2.2.0
+numpy>=1.26.4
+
+# Utilities
+python-dotenv>=1.0.1
+pyyaml>=6.0.1
+
+# Testing
+pytest>=8.0.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.23.4
+
+# Development
+black>=24.1.1
+flake8>=7.0.0
+mypy>=1.8.0
+
+# Optional: For local LLMs
+# transformers>=4.37.2
+# torch>=2.2.0
