@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(tree:*)",
+      "Bash(dir:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(wc:*)",
+      "Bash(py -3.12 --version:*)",
+      "Bash(uv --version:*)",
+      "Bash(\".venv\\\\Scripts\\\\python.exe\" --version)",
+      "Bash(\"venv\\\\Scripts\\\\python.exe\" --version)",
+      "Bash(.venv/Scripts/python.exe:*)",
+      "Bash(venv/Scripts/python.exe --version)",
+      "Bash(venv/Scripts/pip.exe:*)",
+      "Bash(uv venv:*)",
+      "Bash(source:*)",
+      "Bash(uv pip install:*)",
+      "Bash(pip show:*)",
+      "Bash(pytest:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: GRC AI Toolkit with validation fixes\n\nThis is the initial commit of the GRC AI Toolkit project, including:\n\nCore Features:\n- Multi-LLM integration \\(OpenAI, Anthropic, local models\\)\n- AI agent framework with orchestration\n- Document processing and RAG \\(FAISS, ChromaDB\\)\n- Streamlit UI components\n- Sample data generators for testing\n\nBug Fixes Applied:\n- Fix syntax errors in llm/config.py \\(smart quotes → regular quotes\\)\n- Fix LangChain import in data/processor.py \\(use langchain_text_splitters\\)  \n- Add missing export in sample_data/__init__.py \\(generate_sample_dataset\\)\n\nValidation Results \\(Python 3.12.8\\):\n- 32/34 tests passing \\(94% pass rate\\)\n- 33% code coverage\n- 203 dependencies installed successfully\n- Full validation report included\n\nConfiguration:\n- Added .gitignore to exclude venv, cache, and sensitive files\n- .env template provided \\(.env.example\\)\n- Support for OpenAI, Anthropic, and Groq providers\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(gh:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:groq.com)",
+      "Bash(python:*)",
+      "Bash(git commit:*)",
+      "Bash(pip install:*)",
+      "Bash(copy:*)",
+      "Bash(xcopy:*)",
+      "Bash(powershell -Command \"Copy-Item ''C:\\\\Users\\\\kabra\\\\oceg_grc\\\\.private\\\\scripts\\\\*'' ''C:\\\\Users\\\\kabra\\\\.project-tracker-template\\\\.private\\\\scripts\\\\'' -Recurse -Force\")",
+      "Bash(powershell -Command:*)",
+      "Bash(git init:*)",
+      "Bash(git reset:*)"
+    ]
+  }
+}
