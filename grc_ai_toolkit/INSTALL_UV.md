@@ -1,5 +1,7 @@
 # Installation with uv (Recommended - Modern & Fast)
 
+> **Note:** For traditional pip-based setup, see [INSTALL.md](INSTALL.md).
+
 ## Prerequisites
 
 ### 1. Install Python 3.12.8
@@ -43,8 +45,9 @@ uv --version
 ### Quick Install (Recommended)
 
 ```bash
-# 1. Navigate to project
-cd C:\Users\kabra\oceg_grc\grc_ai_toolkit
+# 1. Clone repository (if not already done)
+git clone https://github.com/AnushaCabral/grc-ai-toolkit.git
+cd grc-ai-toolkit/grc_ai_toolkit
 
 # 2. Create venv and install everything in one command
 uv venv

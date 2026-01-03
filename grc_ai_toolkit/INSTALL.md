@@ -1,5 +1,7 @@
 # Installation Guide
 
+> **Note:** For faster setup with modern tooling, see [INSTALL_UV.md](INSTALL_UV.md) which uses `uv` (9x faster than pip).
+
 ## Python Version Requirements
 
 **Important**: This toolkit requires **Python 3.10, 3.11, or 3.12**

@@ -20,26 +20,40 @@ This repository contains **5 production-ready AI tools** designed to transform G
 
 ## 📂 Repository Structure
 
-```
-oceg_grc/
-├── grc_ai_toolkit/          # Shared foundation module
-│   ├── agents/              # Reusable AI agent templates
-│   ├── llm/                 # LLM integration layer
-│   ├── data/                # Data processing utilities
-│   ├── ui/                  # Streamlit component library
-│   ├── utils/               # Common utilities
-│   └── tests/               # Test suite
-├── tool1_grc_content_creator/    # Tool 1: Content Creator
-├── tool2_tprm_platform/          # Tool 2: TPRM Platform
-├── tool3_risk_management/        # Tool 3: Risk Management
-├── tool4_compliance_tool/        # Tool 4: Compliance Tool
-├── tool5_audit_system/           # Tool 5: Audit System
-├── docs/                    # Documentation
-├── templates/               # GRC templates (policies, frameworks)
-├── data/                    # Sample data and schemas
-└── scripts/                 # Utility scripts
+This is a **monorepo** containing:
+- Shared GRC AI toolkit foundation (`grc_ai_toolkit/`)
+- Tool specifications (Tool 1-5)
+- Project coordination files
 
+**Current Structure:**
 ```
+grc-ai-toolkit/              # Main repository (monorepo)
+├── grc_ai_toolkit/          # Shared foundation library
+│   ├── llm/                 # Multi-LLM integration (OpenAI, Anthropic, Groq)
+│   ├── agents/              # AI agent framework with orchestration
+│   ├── data/                # Document processing & RAG (FAISS, ChromaDB)
+│   ├── ui/                  # Streamlit UI components
+│   ├── sample_data/         # Test data generators
+│   └── tests/               # Comprehensive test suite
+├── tool1_grc_content_creator_spec.md  # Tool 1 specification
+├── README.md                # This file
+├── ARCHITECTURE.md          # System architecture documentation
+├── CONSOLIDATION.md         # Repository consolidation guide
+└── .private/                # Local tracking (gitignored, not in repo)
+```
+
+**Future Structure** (as tools are implemented):
+```
+grc-ai-toolkit/
+├── grc_ai_toolkit/          # Shared foundation (complete)
+├── tool1_grc_content_creator/    # Tool 1: Content Creator (planned)
+├── tool2_tprm_platform/          # Tool 2: TPRM Platform (planned)
+├── tool3_risk_management/        # Tool 3: Risk Management (planned)
+├── tool4_compliance_tool/        # Tool 4: Compliance Tool (planned)
+└── tool5_audit_system/           # Tool 5: Audit System (planned)
+```
+
+The 5 tools will be implemented on top of the shared foundation.
 
 ## 🚀 Quick Start
 
@@ -53,8 +67,8 @@ oceg_grc/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/oceg_grc.git
-cd oceg_grc
+git clone https://github.com/AnushaCabral/grc-ai-toolkit.git
+cd grc-ai-toolkit
 
 # Create virtual environment
 python -m venv venv
