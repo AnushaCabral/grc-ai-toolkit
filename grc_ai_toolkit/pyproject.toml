@@ -106,7 +106,7 @@ Issues = "https://github.com/your-username/grc-ai-toolkit/issues"
 grc-toolkit = "grc_ai_toolkit.cli:main"
 
 [tool.setuptools]
-packages = ["grc_ai_toolkit"]
+packages = {find = {}}  # Auto-discover all packages with __init__.py
 
 [tool.setuptools.package-data]
 grc_ai_toolkit = ["py.typed"]
