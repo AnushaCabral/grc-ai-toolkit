@@ -224,11 +224,7 @@ class AgentOrchestrator:
         graph = {name: step.depends_on for name, step in self.steps.items()}
 
         # Kahn's algorithm
-        in_degree = {name: 0 for name in graph}
-        for deps in graph.values():
-            for dep in deps:
-                if dep in in_degree:
-                    in_degree[dep] += 1
+        in_degree = {name: len(deps) for name, deps in graph.items()}
 
         queue = [name for name, degree in in_degree.items() if degree == 0]
         result = []

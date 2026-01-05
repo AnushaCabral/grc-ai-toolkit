@@ -327,7 +327,8 @@ class DocumentExporter:
 """
         )
 
-        html.append("</head>", "<body>")
+        html.append("</head>")
+        html.append("<body>")
 
         # Add title
         if title:
@@ -386,7 +387,8 @@ class DocumentExporter:
         if in_list:
             html.append("</ul>")
 
-        html.append("</body>", "</html>")
+        html.append("</body>")
+        html.append("</html>")
 
         # Write file
         output_path.write_text("\n".join(html), encoding="utf-8")
